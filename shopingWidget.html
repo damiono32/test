@@ -1,0 +1,170 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/widgets.css">
+    <link rel="stylesheet" href="css/vivify.min.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css" />
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+</head>
+<body class="custom-overflow">
+  
+<div class="widget-slideshow">
+
+<!-- Slider main container -->
+<p class="page-tag">Widget Shopping</p>
+<div class="swiper-container">
+    <!-- Additional required wrapper -->
+    <div class="swiper-wrapper">
+      <!-- Slides -->
+     
+      <div class="swiper-slide">
+          <img src="images/weather promotion.png">
+          <div class="slide-download">
+              <button class="slide-button prominent">Install Widget</button>
+              <button class="slide-button">Widget Shop</button>
+          </div>
+      </div>
+      <div class="swiper-slide">
+        <img src="Assets/jokes promotion.png">
+        <div class="slide-download">
+            <button class="slide-button prominent">Install Widget</button>
+            <button class="slide-button">Widget Shop</button>
+        </div>
+    </div>
+      <div class="swiper-slide">
+        <img src="images/YouTube promotion.png">
+        <div class="slide-download">
+            <button class="slide-button prominent">Install Widget</button>
+            <button class="slide-button">Widget Shop</button>
+        </div>
+    </div>
+ 
+    </div>
+    <!-- If we need pagination -->
+    <div class="swiper-pagination"></div>
+  
+  </div>
+</div>
+
+
+
+
+
+    <div id="widgetShop"></div>
+   
+
+    <div id="install" class="install">
+        <button id="large-close" class="large-close">
+
+        </button>
+<div class="install-bottom vivify fadeInBottom duration-400">
+    <div style="width: 234px;background-color: transparent;" class="widget-shop-item">
+        <img id="logoOutput" style="float: left;border: solid 1px lightgray;" loading="lazy" class="item-logo" src="">
+   
+        <div style="float: left;margin-top: 2px;margin-bottom: -2px;" class="item-text-container">
+            <h3 id="nameOutput">Placeholder</h3>
+            <p><span id="createdByOutput">Created By</span> - <span id="priceOutput">Price</span></p>
+        </div>
+        <button id="installButton" class="install-button" >Install</button>
+    </div> 
+    <iframe src="/weatherWidget.html" class="widget-preview" id="widgetPreview"></iframe>
+</div>
+    </div>
+
+    <div id="edit-screen">
+      <div class="edit-list">
+<h2>Select Slot</h2>
+
+<div style="display: none;" class="widget-shop-item vivify fadeIn duration-100" >
+  <img id="editImg1" loading="lazy" class="item-logo" src="images/blank.svg">
+  <span class="placeIcon">1</span>
+  <br>
+  <div class="item-text-container">
+      <h3 id="editH31">YouTube</h3>
+      <p id="editP1">Google Inc.</p>
+  </div>
+</div>
+
+<div id="setState2" class="widget-shop-item vivify fadeIn delay-100 duration-100">
+  <img id="editImg2" loading="lazy" class="item-logo" src="images/blank.svg">
+  <span class="placeIcon">1</span>
+  <br>
+  <div class="item-text-container">
+      <h3 id="editH32">YouTube</h3>
+      <p id="editP2">Google Inc.</p>
+  </div>
+</div>
+
+<div id="setState3" class="widget-shop-item vivify fadeIn delay-200 duration-100">
+  <img id="editImg3" loading="lazy" class="item-logo" src="images/blank.svg">
+  <span class="placeIcon">2</span>
+  <br>
+  <div class="item-text-container">
+      <h3 id="editH33">YouTube</h3>
+      <p id="editP3">Google Inc.</p>
+  </div>
+</div>
+
+<div id="setState4" class="widget-shop-item vivify fadeIn delay-300 duration-100">
+  <img id="editImg4" loading="lazy" class="item-logo" src="images/blank.svg">
+  <span class="placeIcon">3</span>
+  <br>
+  <div class="item-text-container">
+      <h3 id="editH34">YouTube</h3>
+      <p id="editP4">Google Inc.</p>
+  </div>
+</div>
+
+<div id="setState5" class="widget-shop-item vivify fadeIn delay-400 duration-100">
+  <img id="editImg5" loading="lazy" class="item-logo" src="images/blank.svg">
+  <span class="placeIcon">4</span>
+  <br>
+  <div class="item-text-container">
+      <h3 id="editH35">YouTube</h3>
+      <p id="editP5">Google Inc.</p>
+  </div>
+</div>
+
+<div id="setState6" class="widget-shop-item vivify fadeIn delay-500 duration-100">
+  <img id="editImg6" loading="lazy" class="item-logo" src="images/blank.svg">
+  <span class="placeIcon">5</span>
+  <br>
+  <div class="item-text-container">
+      <h3 id="editH36">YouTube</h3>
+      <p id="editP6">Google Inc.</p>
+  </div>
+</div>
+
+      </div>
+    </div>
+
+    
+<script id="shop-template" type="text/x-handlebars-template">
+  {{#each this}}
+  
+ 
+<div onclick="popup('{{name}}', '{{logo}}', '{{createdBy}}', '{{price}}', '{{logo}}', '{{widgetLink}}', '{{widgetSize}}')" class="widget-shop-item">
+  <img loading="lazy" class="item-logo" src="{{logo}}">
+  <br>
+  <div class="item-text-container">
+      <h3>{{name}}</h3>
+      <p>{{createdBy}} - {{price}}</p>
+  </div>
+</div>
+
+  {{/each}}
+  
+  </script>
+
+  <script src="js/widgets.js"></script>
+  <script src="js/widgetHandler.js"></script>
+</body>
+</html>
+

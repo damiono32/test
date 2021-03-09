@@ -1,0 +1,41 @@
+{
+    "name": "_WIDGY_",
+    "version": "1.0",
+    "description": "A modern extension that will bring more power to the users! This extension changes your new tab page to a more redifined page that allows you to easily change search engines, your background, and behold add widgets!!",
+      "chrome_url_overrides" : {
+        "newtab": "load.html"
+      },
+      "permissions": [
+        "tabs",
+        "topSites",
+        "activeTab",
+        "https://webwidgets.netlify.app/",
+        "http://webwidgets.netlify.app/",
+        "http://127.0.0.1:52582/",
+        "http://localhost/"
+      ],
+      "background": {
+        "scripts": ["background.js"],
+        "persistent": false
+      },
+      "browser_action":{
+        "default_popup": "index.html"
+
+      },
+      "content_scripts": [
+        {
+        "matches": [
+            "https://webwidgets.netlify.app/",
+            "http://webwidgets.netlify.app/",
+            "http://127.0.0.1:52582/",
+            "http://localhost/",
+            "http://127.0.0.1:52582/shopingWidget.html",
+            "https://webwidgets.netlify.app/shopingWidget.html"
+            ],
+        "js": ["content.js", "jsLibraries.js"], 
+        "run_at": "document_end" ,
+        "all_frames": true
+        }
+    ], 
+    "manifest_version": 2
+  }

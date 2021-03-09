@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" >
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="css/widgets.css">
+    <link rel="stylesheet" href="css/vivify.min.css">
+   
+    <script
+  src="https://code.jquery.com/jquery-3.5.1.min.js"
+  integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0="
+  crossorigin="anonymous"></script>
+ 
+</head>
+<body>
+  <script>
+    document.addEventListener("DOMContentLoaded", function() {
+      chrome.management.getAll(getAllCallback);
+    });
+    
+    var getAllCallback = function(list) {
+     alert("test")
+
+      return "/noicon.png";
+    };
+  </script>
+
+   <div class="widget-search">
+     <input oninput="window.searchValue = document.getElementById('widgetSearch').value;" placeholder="Search Spotify" type="search" id="widgetSearch">
+     <button style="background-color: #1fd762;" type="submit" id="searchSubmit"><i style="color: black;" class="material-icons">search</i></button>
+   </div>
+   <script>
+     var input = document.getElementById("widgetSearch");
+input.addEventListener("keyup", function(event) {
+  if (event.keyCode === 13) {
+   event.preventDefault();
+   document.getElementById("searchSubmit").click();
+   window.open('https://open.spotify.com/search/' + searchValue, '_blank');
+  }
+});
+   </script>
+   <div class="widget-button-grid">
+    <a href="https://open.spotify.com/collection/playlists" target="_blank">
+<button class="grid-item">
+  <i class="material-icons">library_music</i>
+  <p>Your Library</p>
+</button>
+</a>
+<a href="https://open.spotify.com/collection/tracks" target="_blank">
+<button class="grid-item">
+  <i class="material-icons">favorite</i>
+  <p>Liked Songs</p>
+</button>
+</a>
+   </div>
+</body>
+</html>

@@ -1,0 +1,15 @@
+<script type="text/x-handlebars-template">
+      {{#each this}}
+    
+   
+  <div onclick="popup('{{name}}', '{{logo}}', '{{createdBy}}', '{{price}}', '{{logo}}', '{{widgetLink}}', '{{widgetSize}}')" class="widget-shop-item">
+      <img loading="lazy" class="item-logo" src="{{logo}}">
+      <br>
+      <div class="item-text-container">
+          <h3>{{name}}</h3>
+          <p>{{createdBy}} - {{price}}</p>
+      </div>
+  </div>
+  
+      {{/each}}
+</script>

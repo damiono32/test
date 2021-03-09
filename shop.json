@@ -1,0 +1,151 @@
+[
+
+      {
+        "id": "1",
+        "name": "YouTube",
+        "createdBy": "Google API",
+        "price": "Free",
+        "banner": "https://i.pinimg.com/originals/8a/a4/33/8aa43318b59561b47568faf4c1f80e6f.jpg",
+        "logo": "Assets/youtube.png",
+        "widgetLink": "/youtubeWidget.html",
+        "widgetSize": "Large"
+       
+      },
+
+      {
+        "id": "2",
+        "name": "Gmail",
+        "createdBy": "Google API",
+        "price": "Free",
+        "banner": "https://images.unsplash.com/photo-1577201872486-e25a44ae7c77?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80",
+        "logo": "https://1000logos.net/wp-content/uploads/2018/05/Gmail-logo.png",
+        "widgetLink": "/gmailWidget.html",
+        "widgetSize": "Medium"
+       
+      },
+
+      {
+        "id": "3",
+        "name": "Weather",
+        "createdBy": "Google API",
+        "price": "Free",
+        "banner": "https://www.braverlaw.net/wp-content/uploads/2016/04/sunny-day.jpg",
+        "logo": "https://brandslogo.net/wp-content/uploads/2015/09/google-favicon-vector.png",
+        "widgetLink": "/weatherWidget.html",
+        "widgetSize": "Medium"
+       
+      },
+
+      {
+        "id": "4",
+        "name": "Spotify",
+        "createdBy": "Web Widgets",
+        "price": "Free",
+        "banner": "https://i.pinimg.com/originals/8a/a4/33/8aa43318b59561b47568faf4c1f80e6f.jpg",
+        "logo": "https://seeklogo.com/images/S/spotify-2015-logo-560E071CB7-seeklogo.com.png",
+        "widgetLink": "/spotifySearchWidget.html",
+        "widgetSize": "Medium"
+       
+      },
+
+      {
+        "id": "5",
+        "name": "Github",
+        "createdBy": "Github API",
+        "price": "Free",
+        "banner": "https://i.pinimg.com/originals/8a/a4/33/8aa43318b59561b47568faf4c1f80e6f.jpg",
+        "logo": "https://www.kindpng.com/picc/m/255-2558173_github-logo-png-transparent-png.png",
+        "widgetLink": "/githubWidget.html",
+        "widgetSize": "Large"
+       
+      },
+
+      {
+        "id": "6",
+        "name": "The Doggo Widget",
+        "createdBy": "TheDogApi",
+        "price": "Free",
+        "banner": "https://i.pinimg.com/originals/8a/a4/33/8aa43318b59561b47568faf4c1f80e6f.jpg",
+        "logo": "https://static.thenounproject.com/png/61386-200.png",
+        "widgetLink": "/doggoWidget.html",
+        "widgetSize": "Flexable"
+       
+      },
+      {
+        "id": "7",
+        "name": "Jokes",
+        "createdBy": "Jokes API",
+        "price": "Free",
+        "banner": "https://i.pinimg.com/originals/8a/a4/33/8aa43318b59561b47568faf4c1f80e6f.jpg",
+        "logo": "Assets/jokeicon.png",
+        "widgetLink": "/jokeWidget.html",
+        "widgetSize": "Medium"
+       
+      },
+      {
+        "id": "8",
+        "name": "File Share",
+        "createdBy": "By Snapdrop",
+        "price": "Free",
+        "banner": "",
+        "logo": "Assets/snapdrop.png",
+        "widgetLink": "https://snapdrop.net/",
+        "widgetSize": "Large"
+       
+      },
+
+      {
+        "id": "9",
+        "name": "MC Converter",
+        "createdBy": "Martin Minchev",
+        "price": "Free",
+        "banner": "",
+        "logo": "https://icon-library.com/images/icon-convert/icon-convert-2.jpg",
+        "widgetLink": "https://mconverter.eu/",
+        "widgetSize": "Flexable"
+       
+      },
+
+      {
+        "id": "11",
+        "name": "5217",
+        "createdBy": "Liam Spradlin",
+        "price": "Free",
+        "banner": "",
+        "logo": "https://d3frsattnbx5l6.cloudfront.net/1536951103369-5217-android-chrome-512x512.png",
+        "widgetLink": "https://web.5217.app/",
+        "widgetSize": "Large"
+       
+      },
+
+      {
+        "id": "12",
+        "name": "The Cube",
+        "createdBy": "Boris Šehovac",
+        "price": "Free",
+        "banner": "",
+        "logo": "https://d3frsattnbx5l6.cloudfront.net/1541289835730-apple-touch-icon.png",
+        "widgetLink": "https://bsehovac.github.io/the-cube/",
+        "widgetSize": "Flexable"
+       
+      },
+
+      {
+        "id": "13",
+        "name": "Reddit",
+        "createdBy": "Reddit API",
+        "price": "Free",
+        "banner": "",
+        "logo": "https://logodownload.org/wp-content/uploads/2018/02/reddit-logo-16.png",
+        "widgetLink": "/redditWidget.html",
+        "widgetSize": "Flexable"
+       
+      }
+
+
+
+
+   
+
+    ]
+

@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>_WIDGY_</title>
+    <link rel="shortcut icon" href="Assets/FAVICON.png">
+    <link rel="stylesheet" href="/css/main.css">
+    <link rel="stylesheet" href="/css/vivify.min.css">
+    <link rel="stylesheet" href="/css/search.css">
+    <link rel="manifest" href="/Extension/manifest.json">
+</head>
+<body >
+  <!-- Added code -->
+  <div class="search-zone-container">
+    <div class="wrapper-f">
+      <img id="search-img" src="Assets/google.png">
+
+      <form id="search-box-form" action="https://google.com/search" enctype="multipart/form-data">
+        <div id="search-style">
+          <div id="search-box">
+              <img class="search-glass" src="Assets/search.svg">
+              <input name="q" autocomplete="off">
+              <img id="search-cancel" style="display: none; cursor: pointer;" src="Assets/cancel.svg">
+          </div>
+          <div id="autocomplete-results" style="display: none;">
+            <!-- AUTO -->
+          </div>
+        </div>
+      </form>
+      <p id="search-recognition">Powered By Google Search</p>
+      <div id="top-sites-container">
+          
+          <div class="top-site" id="add-new-shorcuts">
+            <a id="new-shortcute-top" onclick="options_top_site(this)"><img style="width: 70%;" src="Assets/plus.svg"></a>
+            <p>New Shortcut</p>
+        </div>
+       
+          <div id="editor-add-top" >
+              <div>
+              <p>Edit shortcut</p>
+              <label for="url-top">Url</label>
+              <input id="url-top" class="top-edit-inp" type="text" required>
+              <label for="name-top">Name</label>
+              <input id="name-top" class="top-edit-inp" type="text" required>
+              <div class="buttons-flex-container">
+                    <button id="top-site-cancel">Cancel</button>
+                    <button id="top-site-submit">Submit</button>
+              </div>
+            </div>
+          </div>
+      </div>
+    
+</div>
+<img id="web-widget-site-options-opener" src="Assets/gear.svg">
+<div class="site-controller-wrapper">
+    <div class="site-controller">
+        <img src="Assets/cancel.svg">
+        <ul>
+            <li>Background</li>
+            <li>Layout</li>
+            <li>Search Engine</li>
+        </ul>
+        <div>
+
+        </div>
+    </div>
+</div>
+</div>
+
+
+<!--⚠ Widget Zone (Stay Away DAMION😡😡😡😡) ⚠-->
+    <aside class="widget-zone-container">
+        <div class="widget-zone">
+              <!-- TABLE CONSTRUCTION-->
+          
+
+            <div class="widget-container">
+                <h1>Web Widgets</h1>
+                <p>v1.1</p>
+
+             <div  id="widget-sub-container">
+                 
+            
+
+               <div id="widget-slot2" class="widget-slot vivify fadeIn delay-200">
+
+                <div id="slot-popover" class="slot-popover">
+
+                </div>
+
+                <p id="slot2Name">Weather</p>
+                   <iframe  scrolling="no" class="widget-iframe" id="widget-item2" src="/weatherWidget.html"></iframe>
+                   <div class="slot-popover">
+                    <img id="slot2img" id="widget-icon2" class="widget-icon"  src="https://brandslogo.net/wp-content/uploads/2015/09/google-favicon-vector.png">
+                    <div class="pop-menu vivify fadeIn duration-400">
+                      <button id="deleteSlot2" class="delete-btn">Remove Widget</button>
+                    </div>
+                   </div>
+                  
+
+                   
+               </div>
+
+               <div id="widget-slot3" class="widget-slot vivify fadeIn delay-300">
+                <p id="slot3Name">YouTube</p>
+                <iframe scrolling="no" class="widget-iframe large-frame" id="widget-item3" src="/youtubeWidget.html"></iframe>
+                <div class="slot-popover">
+                  <img id="slot3img" class="widget-icon" id="widget-icon3" src="https://prenkey.com/wp-content/uploads/2020/04/youtube.png">
+                  <div class="pop-menu vivify fadeIn duration-400">
+                    <button id="deleteSlot3" class="delete-btn">Remove Widget</button>
+                  </div>
+                </div>
+                
+            </div>
+
+            <div id="widget-slot4" class="widget-slot vivify fadeIn delay-400">
+                <p id="slot4Name">Gmail</p>
+                <iframe scrolling="no" class="widget-iframe " id="widget-item4" src="/gmailWidget.html"></iframe>
+                <div class="slot-popover">
+                  <img id="slot4img" class="widget-icon " id="widget-icon4" src="images/blank.svg">
+                  <div class="pop-menu vivify fadeIn duration-400">
+                    <button id="deleteSlot4" class="delete-btn">Remove Widget</button>
+                  </div>
+                </div>
+                
+            </div>
+
+            <div id="widget-slot5" class="widget-slot vivify fadeIn delay-500 ">
+                <p id="slot5Name">Spotify</p>
+                <iframe scrolling="no" class="widget-iframe" id="widget-item5" src="/spotifySearchWidget.html"></iframe>
+                <div class="slot-popover">
+                  <img id="slot5img" class="widget-icon" id="widget-icon5" src="https://seeklogo.com/images/S/spotify-2015-logo-560E071CB7-seeklogo.com.png">
+                  <div class="pop-menu vivify fadeIn duration-400">
+                    <button id="deleteSlot5" class="delete-btn">Remove Widget</button>
+                  </div>
+                </div>
+              
+            </div>
+
+            <div id="widget-slot6" class="widget-slot  vivify fadeIn delay-600">
+                <p id="slot6Name">Doggo</p>
+                <iframe scrolling="no" class="widget-iframe" id="widget-item6" src="/doggoWidget.html"></iframe>
+                <div class="slot-popover">
+                  <img id="slot6img" class="widget-icon" id="widget-icon6" src="images/blank.svg">
+                  <div class="pop-menu vivify fadeIn duration-400">
+                    <button id="deleteSlot6" class="delete-btn">Remove Widget</button>
+                  </div>
+                </div>
+                
+            </div>
+
+            <div id="widget-slot1" class="widget-slot large-slot vivify fadeIn delay-100 shopping-slot">
+                <p id="slot1Name">Shopping</p>
+                <iframe class="widget-iframe large-frame shopping-frame"  src="/shopingWidget.html"></iframe>
+                <img id="slot1img" class="widget-icon large-icon" src="Assets/Shopping.svg">
+            </div>
+             </div>
+            
+
+            <!---------------Widget Skeleton Loading----------------->
+
+            <div id="widgetLoader" class="widget-loader">
+                <div style="display: block;" id="widget-slot1" class="widget-slot vivify blink loader infinite duration-700">
+                 
+               
+                </div>
+    
+             <div id="widget-slot3" class="widget-slot vivify blink loader infinite duration-700">
+               
+        
+             </div>
+    
+             <div id="widget-slot4" class="widget-slot vivify large-slot blink loader infinite duration-700">
+               
+                
+             </div>
+    
+             <div id="widget-slot5" class="widget-slot vivify blink loader infinite duration-700">
+                
+              
+             </div>
+    
+             <div id="widget-slot6" class="widget-slot  vivify blink loader infinite duration-700">
+   
+              
+             </div>
+            </div>
+        
+
+            </div>
+
+
+        </div>
+    </aside>
+
+   
+    <!-- prevents css fireing on page load -->
+    <script type="text/javascript" src="/Js/widgets.js"></script>
+    <script type="text/javascript" src="/Js/search.js"></script>
+ <script type="text/javascript" src="/Js/widgetHandler.js"></script>
+
+
+ <script id="shop-template" type="text/x-handlebars-template">
+    {{#each this}}
+  
+  
+  <div onclick="popup('{{name}}', '{{logo}}', '{{createdBy}}', '{{price}}', '{{logo}}', '{{widgetLink}}', '{{widgetSize}}')" class="widget-shop-item">
+    <img loading="lazy" class="item-logo" src="{{logo}}">
+    <br>
+    <div class="item-text-container">
+        <h3>{{name}}</h3>
+        <p>{{createdBy}} - {{price}}</p>
+    </div>
+  </div>
+  
+    {{/each}}
+  </script>
+
+
+</body>
+</html>

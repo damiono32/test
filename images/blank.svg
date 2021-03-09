@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="45" height="45" viewBox="0 0 45 45">
+  <defs>
+    <clipPath id="clip-blank">
+      <rect width="45" height="45"/>
+    </clipPath>
+  </defs>
+  <g id="blank" clip-path="url(#clip-blank)">
+    <rect width="45" height="45" fill="#fff"/>
+  </g>
+</svg>
